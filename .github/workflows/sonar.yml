@@ -15,7 +15,10 @@ permissions:
 jobs:
   Analysis:
     runs-on: ubuntu-latest
-
+    defaults:
+      run:
+        working-directory: .
+        
     steps:
       - name: Setup Node.js 
         uses: actions/setup-node@v7.1.0
